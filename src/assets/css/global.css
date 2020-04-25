@@ -1,7 +1,17 @@
-html
-bady
+html,
+body,
 #app{
 	height: 100%;
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+.el-breadcrumb{
+	margin-bottom: 15px;
+	font-size: 11px;
+}
+
+.el-table{
+	margin-top: 18px;
+	font-size: 12px;
 }
