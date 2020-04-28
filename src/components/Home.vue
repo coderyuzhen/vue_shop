@@ -5,7 +5,7 @@
 	  <el-header>
 	  	<div id="">
 	  		<img src="../assets/基础信息管理-01.png" style="width: 45px; height: 45px;"/>
-	  		<span>拼淘购物后台管理系统</span>
+	  		<span>SHOP购后台管理系统</span>
 	  	</div>
 	  	<el-button type="info" @click="logout">退出</el-button>
 	  </el-header>
@@ -35,6 +35,7 @@
 				          <span>{{item.authName}}</span>
 				        </template>
 				        <!--二级菜单-->
+				        <!--router设为true，会将index值作为路由跳转路径-->
 			             <el-menu-item :index="'/' + subItem.path" v-for="subItem in item.children" :key="subItem.id">
 			             	 <template slot="title">
 				        <!--图标-->
