@@ -4,10 +4,12 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 import './assets/css/global.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 
 Vue.config.productionTip = false
+Vue.component('tree-table',TreeTable)
 //配置请求根路径
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
 
