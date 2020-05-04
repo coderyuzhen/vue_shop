@@ -62,12 +62,10 @@
 		  @close="addcateDialogClosed"
 		 >
 		  <!--添加分类表单-->
-		  <el-form 
-		  	:model="addCateForm" 
+		  <el-form :model="addCateForm" 
 		  	:rules="addCateFormRules" 
 		  	ref="addCateFormRef" 
-		  	label-width="100px" 
-		    >
+		  	label-width="100px">
 			  <el-form-item label="分类名称：" prop="cat_name">
 			    <el-input v-model="addCateForm.cat_name"></el-input>
 			  </el-form-item>
@@ -78,7 +76,8 @@
 				    :props="{ expandTrigger: 'hover',value:'cat_id',label:'cat_name',children:'children'}"
 				    @change="parentCateChange"
 				    clearable
-				    change-on-select></el-cascader>
+				    change-on-select>
+				</el-cascader>
 			  </el-form-item>
 		  </el-form>
 		  <span slot="footer" class="dialog-footer">
