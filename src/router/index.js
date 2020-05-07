@@ -11,6 +11,7 @@ import Params from '../components/goods/Params.vue'
 import List from '../components/goods/List.vue'
 import Add from '../components/goods/Add.vue'
 import Orders from '../components/orders/Orders.vue'
+import Reports from '../components/reports/Reports.vue'
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,10 @@ Vue.use(VueRouter)
     path: '/orders',
     name: 'Orders',
     component: Orders
+  },{
+    path: '/reports',
+    name: 'Reports',
+    component: Reports
   }]
   }
 ]
